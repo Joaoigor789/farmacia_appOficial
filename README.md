@@ -160,4 +160,13 @@ farmacia_app/
 - `MenuActivity`
 - `AppMonitorService`
 
+
 ---
+
+## 🖼️ Capturas de Tela do Aplicativo
+
+### Tela de Estudos
+![Tela de Estudos](./screenshots/screenshot1.png)
+
+### Quiz Interativo
+![Quiz](./screenshots/screenshot2.png)
