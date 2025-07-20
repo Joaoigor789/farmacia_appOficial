@@ -6,6 +6,14 @@
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 ![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue)
 
+
+![Android](https://img.shields.io/badge/Platform-Android-green?logo=android)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey)
+
+...
+
+
 **Aplicativo educacional desenvolvido para auxiliar estudantes de Farmácia. O app oferece ferramentas variadas, como simulados, comparador de medicamentos, fórum com moderação, conteúdos por módulos, modo offline, integração com vídeos e muito mais.**
 
 ---
