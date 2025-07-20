@@ -166,7 +166,7 @@ farmacia_app/
 ## 🖼️ Capturas de Tela do Aplicativo
 
 ### Tela principal 1
-![Tela Principal](./screenshots/screen.jpeg)
+![Tela Principal](./screenshots/screen1.jpeg)
 
 ### Tela principal 2
-![Tela de Quiz](./screenshots/scree1.jpeg)
+![Tela de Quiz](./screenshots/screen2.jpeg)
