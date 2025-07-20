@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="@color/white">
+
+    <!-- Título da tela -->
+    <TextView
+            android:id="@+id/tituloChatbot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chatbot_farm_cia"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"/>
+
+    <!-- Caixa de texto para exibir a pergunta do chatbot -->
+    <TextView
+            android:id="@+id/perguntaChatbot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paciente_estou_com_dor_de_cabe_a_e_febre_o_que_devo_fazer"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tituloChatbot"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"/>
+
+    <!-- Caixa de entrada para resposta do usuário -->
+    <EditText
+            android:id="@+id/respostaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/digite_o_tratamento_recomendado"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:layout_below="@id/perguntaChatbot"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="20dp"
+            android:minHeight="48dp"/>
+
+    <!-- Botão para enviar a resposta -->
+    <Button
+            android:id="@+id/enviarRespostaButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar_resposta"
+            android:textSize="18sp"
+            android:layout_below="@id/respostaEditText"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:layout_centerHorizontal="true"/>
+
+    <!-- Caixa para exibir a resposta do chatbot -->
+    <TextView
+            android:id="@+id/respostaChatbot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ia_aguardando_sua_resposta"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/enviarRespostaButton"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

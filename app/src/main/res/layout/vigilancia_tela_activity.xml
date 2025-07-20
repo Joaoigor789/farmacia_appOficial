@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@drawable/bg_gradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp">
+
+        <!-- Título da tela -->
+        <TextView
+                android:id="@+id/tituloVigilancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vigilancia_e_promocao_saude"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#F4FF81"
+                android:importantForAccessibility="yes"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="24dp"
+                app:layout_constraintHorizontal_bias="0.0"/>
+
+        <!-- Botão Voltar -->
+        <Button
+                android:id="@+id/buttonVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voltar"
+                android:textSize="16sp"
+                android:textColor="#311B92"
+                android:background="@drawable/btn_gradient"
+                app:layout_constraintTop_toBottomOf="@id/tituloVigilancia"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:padding="12dp"
+                android:minWidth="120dp"/>
+
+        <!-- Texto para próxima tela -->
+        <TextView
+                android:id="@+id/textViewProximaTela"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/texto_da_pr_xima_tela"
+                android:textColor="#000000"
+                android:importantForAccessibility="yes"
+                app:layout_constraintTop_toBottomOf="@id/buttonVoltar"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- CardView para descrição sobre vigilância à saúde -->
+        <androidx.cardview.widget.CardView
+                android:id="@+id/cardVigilancia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/textViewProximaTela"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                    android:id="@+id/descricaoVigilancia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monitoramento"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="12dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:importantForAccessibility="yes"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView para descrição sobre promoção da saúde -->
+        <androidx.cardview.widget.CardView
+                android:id="@+id/cardPromocao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/cardVigilancia"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                    android:id="@+id/descricaoPromocao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/promocao_saude"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="12dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:importantForAccessibility="yes"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ViewPager2 para exibição de imagens -->
+        <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:contentDescription="@string/viewpager_description"
+                app:layout_constraintTop_toBottomOf="@id/cardPromocao"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

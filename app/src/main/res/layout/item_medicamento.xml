@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="8dp"
+              android:elevation="4dp"
+              android:layout_marginBottom="8dp"
+              android:background="@drawable/bg_gradient">
+
+    <!-- Layout para os textos -->
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/medicamentoNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medicamento"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:paddingEnd="8dp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry"/>
+
+        <TextView
+                android:id="@+id/medicamentoNomeCientifico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_cient_fico"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:paddingTop="2dp"/>
+
+    </LinearLayout>
+
+    <!-- Imagem do medicamento -->
+    <ImageView
+            android:id="@+id/medicamentoImagem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_medicamento"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"/>
+
+    <!-- Layout vertical para Fórmula, Tarja e Prescrição -->
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="8dp">
+
+        <TextView
+                android:id="@+id/medicamentoFormula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/f_rmula_do_medicamento"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/medicamentoTarja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tarjamenta_o"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_marginTop="4dp"/>
+
+        <TextView
+                android:id="@+id/medicamentoPrescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prescri_o"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layoutIQA"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFF9C4"
+              android:padding="16dp"
+              android:visibility="gone">
+
+    <EditText
+            android:id="@+id/edtCO"
+            android:hint="CO (ppm)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <EditText
+            android:id="@+id/edtNO2"
+            android:hint="NO2 (ppm)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <EditText
+            android:id="@+id/edtPM25"
+            android:hint="PM2.5 (µg/m³)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <EditText
+            android:id="@+id/edtSO2"
+            android:hint="SO2 (ppm)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <EditText
+            android:id="@+id/edtO3"
+            android:hint="O3 (ppm)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <Button
+            android:id="@+id/btnCalcularIQA"
+            android:text="Calcular IQA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <TextView
+            android:id="@+id/txtResultadoIQA"
+            android:text="IQA: "
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

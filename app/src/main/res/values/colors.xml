@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores principais -->
+    <color name="colorPrimary">#FF6200EE</color>
+    <color name="colorPrimaryDark">#FF3700B3</color>
+    <color name="colorAccent">#FF03DAC5</color>
+
+    <!-- Cores do tema escuro -->
+    <color name="colorAccentDark">#FF018786</color>
+
+    <color name="background_light">#F5F5F5</color>
+    <color name="orange_color">#FFA500</color> <!-- Cor laranja -->
+
+    <color name="menu_default">#F5F5F5</color> <!-- Cor de fundo padrão do menu -->
+    <color name="menu_pressed">#E0E0E0</color> <!-- Cor quando pressionado -->
+    <color name="menu_highlight">#D6D6D6</color> <!-- Cor de destaque do menu -->
+    <color name="menu_disabled">#BDBDBD</color> <!-- Cor quando desabilitado -->
+    <color name="menu_selected">#A8A8A8</color> <!-- Cor quando selecionado -->
+    <color name="menu_text">#212121</color> <!-- Cor do texto do menu -->
+    <color name="menu_icon">#757575</color> <!-- Cor dos ícones do menu -->
+    <color name="menu_border">#9E9E9E</color> <!-- Cor da borda do menu -->
+    <color name="menu_shadow">#616161</color> <!-- Cor da sombra do menu -->
+    <color name="menu_background">#FFFFFF</color> <!-- Cor do fundo geral do menu -->
+    <color name="menu_hover">#EEEEEE</color> <!-- Cor quando o mouse passa por cima -->
+    <color name="menu_accent">#FF5722</color> <!-- Cor de destaque/acento -->
+    <color name="menu_warning">#FF9800</color> <!-- Cor de aviso -->
+    <color name="menu_success">#4CAF50</color> <!-- Cor de sucesso -->
+    <color name="menu_error">#F44336</color> <!-- Cor de erro -->
+    <color name="menu_info">#2196F3</color> <!-- Cor de informação -->
+    <color name="menu_secondary">#607D8B</color> <!-- Cor secundária -->
+    <color name="menu_light">#CFD8DC</color> <!-- Cor de fundo claro -->
+    <color name="menu_dark">#37474F</color> <!-- Cor de fundo escuro -->
+
+    <color name="nome_comercial_color">#6D4C41</color> <!-- Cor marrom suave -->
+    <color name="red">#FF0000</color>
+
+    <!-- Outras cores (opcionais) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- classe cinzas -->
+
+    <color name="cinza_claro">#B0B0B0</color>
+    <color name="cinza_medio_claro">#A0A0A0</color>
+    <color name="cinza">#808080</color>
+    <color name="cinza_medio_escuro">#606060</color>
+    <color name="cinza_escuro">#404040</color>
+    <color name="cinza_mais_escuro">#101010</color>
+
+
+
+    <!-- Novas cores medievais -->
+    <color name="golden">#FFD700</color> <!-- Dourado -->
+    <color name="antique_white">#FAEBD7</color> <!-- Branco-antigo -->
+
+    <!-- Cor amarela personalizada -->
+    <color name="yellow">#FFFF00</color> <!-- Cor amarela -->
+
+    <!-- Cor transparente -->
+    <color name="transparent">#00000000</color>
+</resources>

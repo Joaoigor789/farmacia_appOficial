@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Título do Fórum -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_rum_de_discuss_o"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    <!-- RecyclerView para os Tópicos -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTopicos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"/>
+
+    <!-- Botão para Criar Novo Tópico -->
+
+    <!-- Título do Chat -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chat_em_tempo_real"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"/>
+
+    <!-- ListView para o Chat -->
+    <ListView
+            android:id="@+id/listViewChat"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="8dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"
+            android:scrollbars="vertical"
+            android:overScrollMode="always" />
+
+    <!-- RecyclerView para o Chat -->
+
+    <!-- Campo de Entrada de Mensagem -->
+    <EditText
+            android:id="@+id/editMensagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="text"
+            android:hint="@string/digite_sua_mensagem"
+            tools:ignore="TextFields"
+            android:minHeight="48dp"/>
+
+    <!-- Botão para Enviar Mensagem -->
+    <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar_mensagem"
+            tools:ignore="VisualLintButtonSize"/>
+
+    <!-- Botão para Acessar o Chat -->
+
+    <!-- Título para Contato com o Desenvolvedor -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contato_com_o_desenvolvedor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"/>
+
+    <!-- ScrollView começa aqui -->
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <!-- Área para Mensagens com o Desenvolvedor -->
+            <TextView
+                    android:id="@+id/textMensagensDev"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="8dp"
+                    android:background="#EEEEEE"
+                    android:textColor="#000000"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"/>
+
+            <!-- Exibição de Mensagem do Chat -->
+            <TextView
+                    android:id="@+id/textMensagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mensagem_do_chat"
+                    android:textSize="16sp"/>
+
+            <!-- Campo de Entrada para Mensagens ao Desenvolvedor -->
+            <EditText
+                    android:id="@+id/editMensagemDev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="text"
+                    android:hint="@string/mensagem_para_o_desenvolvedor"
+                    tools:ignore="TextFields"
+                    android:minHeight="48dp"/>
+
+            <!-- Botão para Enviar Mensagem para o Desenvolvedor -->
+            <Button
+                    android:id="@+id/btnEnviarMensagemDev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enviar_para_o_desenvolvedor"/>
+
+            <!-- Botão para Acessar o Contato com o Desenvolvedor -->
+
+            <!-- Título do Tópico -->
+            <TextView
+                    android:id="@+id/textTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t_tulo_do_t_pico"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="4dp"/>
+
+            <!-- Descrição do Tópico -->
+            <TextView
+                    android:id="@+id/textDescricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descri_o_do_t_pico"
+                    android:textSize="14sp"
+                    android:textColor="#757575"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

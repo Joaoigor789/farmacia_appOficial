@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient">
+
+    <android.widget.ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateFirstView="true">
+
+        <!-- Tela de Informações sobre Bromatologia -->
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:elevation="8dp"
+                        android:radius="16dp"
+                        app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:background="@drawable/bg_gradient"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/tvInfoBromatologia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Informações sobre Bromatologia"
+                                style="@style/Text3D"
+                                tools:ignore="HardcodedText"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Botões -->
+
+                <Button
+                        android:id="@+id/btnSimulado"
+                        style="@style/CustomButton"
+                        android:text="@string/iniciar_simulado"
+                        tools:ignore="VisualLintButtonSize"/>
+
+                <Button
+                        android:id="@+id/btnIrParaEstudo"
+                        style="@style/CustomButton"
+                        android:elevation="4dp"
+                        android:text="@string/ir_para_estudo1"
+                        tools:ignore="VisualLintButtonSize"/>
+
+                <Button
+                        android:id="@+id/btnNotas"
+                        style="@style/CustomButton"
+                        android:text="@string/minhas_anota_es"
+                        tools:ignore="VisualLintButtonSize"/>
+
+                <Button
+                        android:id="@+id/btnquizestudo"
+                        style="@style/CustomButton"
+                        android:text="@string/quizestudo"
+                        tools:ignore="VisualLintButtonSize"/>
+
+                <Button
+                        android:id="@+id/btnquizlipideo"
+                        style="@style/CustomButton"
+                        android:text="@string/lipideo"
+                        tools:ignore="VisualLintButtonSize"
+                        android:layout_height="55dp"/>
+
+                <WebView
+                        android:id="@+id/webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="1043dp"
+                        android:elevation="4dp"
+                        android:contentDescription="@string/webview_description"
+                        android:scrollbars="none"/>
+
+                <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPager1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:contentDescription="@string/viewpager_description"
+                        android:layout_marginTop="16dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Tela de Conteúdo de Estudo -->
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:radius="16dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_margin="10dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tvConteudoEstudo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Conteúdo do Estudo"
+                            style="@style/Text3D"
+                            tools:ignore="HardcodedText"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+        <!-- Layout da tela de Simulado -->
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        android:radius="16dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_margin="10dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/tvPergunta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pergunta do Simulado"
+                                style="@style/Text3D"
+                                tools:ignore="HardcodedText"/>
+
+                        <RadioGroup
+                                android:id="@+id/rgOpcoes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            <RadioButton
+                                    android:id="@+id/rbOpcao1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Opção 1"
+                                    android:layout_marginBottom="8dp"
+                                    tools:ignore="HardcodedText"/>
+
+                            <RadioButton
+                                    android:id="@+id/rbOpcao2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Opção 2"
+                                    android:layout_marginBottom="8dp"
+                                    tools:ignore="HardcodedText"/>
+
+                            <RadioButton
+                                    android:id="@+id/rbOpcao3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Opção 3"
+                                    tools:ignore="HardcodedText"/>
+                        </RadioGroup>
+
+                        <Button
+                                android:id="@+id/btnResponder"
+                                style="@style/CustomButton"
+                                android:text="Responder"
+                                tools:ignore="HardcodedText"/>
+
+                        <Button
+                                android:id="@+id/btnReiniciar"
+                                style="@style/CustomButton"
+                                android:text="Reiniciar"
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+    </android.widget.ViewFlipper>
+
+</RelativeLayout>

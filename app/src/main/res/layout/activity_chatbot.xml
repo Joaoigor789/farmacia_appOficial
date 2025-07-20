@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:gravity="center"
+              android:background="@drawable/background">
+
+    <!-- TextView para exibir o texto que o robô fala -->
+
+    <!-- Novo GIF na parte superior direita -->
+
+    <TextView
+            android:id="@+id/tvFala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_do_rob_aparecer_aqui"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+    android:layout_marginBottom="100dp"
+    android:gravity="center"
+    android:background="@drawable/rounded_border"
+    android:elevation="4dp"
+    android:translationZ="2dp"
+    android:padding="16dp"/> <!-- Adiciona espaçamento interno -->
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifView2"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eva"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="-70dp"
+            android:background="#000000"
+            />
+
+    <!-- GIF original -->
+    <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifView"
+            android:layout_width="wrap_content"
+            android:layout_height="307dp"
+            android:src="@drawable/rob"/>
+
+    <Button
+            android:id="@+id/btnOuvir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ouvir"/>
+
+    <Button
+            android:id="@+id/btnFalar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/falar"/>
+
+</LinearLayout>

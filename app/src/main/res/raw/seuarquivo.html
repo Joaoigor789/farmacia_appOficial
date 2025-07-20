@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presença</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 5px;
+        }
+        
+        .aluno {
+            margin: 10px 0;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .presente,
+        .falta {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        
+        .falta {
+            background-color: #f44336;
+        }
+        
+        #grafico {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            margin: 20px auto;
+        }
+        
+        @media (max-width: 768px) {
+            header nav ul {
+                text-align: center;
+            }
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .aluno {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .presente,
+            .falta {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#lista">Lista de Presença</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="lista">
+        <h2>Lista de Presença</h2>
+        <div class="campo-nome">
+            <label for="nome-aluno">Nome do Aluno:</label>
+            <input type="text" id="nome-aluno" placeholder="Digite seu nome">
+        </div>
+        <div class="aluno">
+            <span id="nome-display">Nome do Aluno</span>
+            <button class="presente" onclick="marcarPresenca()">Presente</button>
+            <button class="falta" onclick="marcarFalta()">Falta</button>
+        </div>
+    </section>
+
+    <section id="grafico-section">
+        <h2>Presenças x Faltas por Aluno</h2>
+        <div id="grafico"></div>
+    </section>
+
+    <script>
+        let alunos = {};
+
+        google.charts.load("current", {
+            packages: ["corechart"]
+        });
+        google.charts.setOnLoadCallback(desenharGrafico);
+
+        function desenharGrafico() {
+            let data = new google.visualization.DataTable();
+            data.addColumn("string", "Aluno");
+            data.addColumn("number", "Presenças");
+            data.addColumn("number", "Faltas");
+
+            for (let aluno in alunos) {
+                data.addRow([aluno, alunos[aluno].presencas, alunos[aluno].faltas]);
+            }
+
+            let options = {
+                title: "Presenças e Faltas por Aluno",
+                bars: "horizontal",
+                hAxis: {
+                    minValue: 0
+                },
+                colors: ["#4CAF50", "#f44336"],
+                legend: {
+                    position: "top"
+                }
+            };
+
+            let chart = new google.visualization.BarChart(document.getElementById("grafico"));
+            chart.draw(data, options);
+        }
+
+        function marcarPresenca() {
+            let nome = document.getElementById("nome-aluno").value.trim();
+            if (nome === "") {
+                alert("Digite o nome do aluno!");
+                return;
+            }
+
+            if (!alunos[nome]) {
+                alunos[nome] = {
+                    presencas: 0,
+                    faltas: 0
+                };
+            }
+
+            alunos[nome].presencas++;
+            alert("Presença marcada para " + nome);
+            desenharGrafico();
+        }
+
+        function marcarFalta() {
+            let nome = document.getElementById("nome-aluno").value.trim();
+            if (nome === "") {
+                alert("Digite o nome do aluno!");
+                return;
+            }
+
+            if (!alunos[nome]) {
+                alunos[nome] = {
+                    presencas: 0,
+                    faltas: 0
+                };
+            }
+
+            alunos[nome].faltas++;
+            alert("Falta marcada para " + nome);
+            desenharGrafico();
+        }
+    </script>
+</body>
+
+</html>

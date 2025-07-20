@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                           xmlns:tools="http://schemas.android.com/tools"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           xmlns:app="http://schemas.android.com/apk/res-auto"
+                           android:background="@drawable/bg_gradient"
+                           android:padding="16dp">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/gif_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:elevation="0dp"
+                tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:text="@string/monitor_de_notifica_es_do_whatsapp"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <!-- Título dos Módulos -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/m_dulos"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_button"
+                    android:elevation="6dp"
+                    style="@style/Text3D"
+                    android:translationZ="4dp"
+                    android:padding="12dp"/>
+
+            <ImageView
+                    android:id="@+id/icone_atualizacao"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/atualizado"
+                    android:visibility="gone"
+                    android:src="@drawable/atualizada" />
+
+            <!-- Contêiner de módulos principais -->
+            <LinearLayout
+                    android:id="@+id/moduleContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:elevation="10dp"
+                    android:translationZ="5dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"/>
+
+            <!-- Contêiner para novos módulos -->
+            <LinearLayout
+                    android:id="@+id/moduleContainer_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:translationZ="5dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:elevation="8dp"/>
+
+            <!-- RecyclerView para vídeos -->
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/video_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <!-- Botão para próximo -->
+            <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pr_ximo"
+                    android:textSize="20sp"
+                    style="@style/Text3D"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginTop="20dp"
+                    android:padding="12dp"
+                    tools:ignore="VisualLintButtonSize"
+                    android:textColor="#7CB342"/>
+
+
+
+            <!-- Texto sobre a versão e desenvolvedor -->
+            <TextView
+                    android:id="@+id/versionDeveloperText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    style="@style/Text3D"
+                    android:text="@string/vers_o_1_0_0_ndesenvolvedor_jo_o_igor"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_border"
+                    android:textColor="#66BB6A"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"/>
+
+            <!-- LinearLayout para bolas de status -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                <!-- Adicionando a bola de status -->
+                <ImageView
+                        android:id="@+id/statusBall1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/green_ball"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:contentDescription="@string/status_ball"
+                        android:elevation="5dp"/>
+
+                <!-- Bola vermelha de status -->
+                <ImageView
+                        android:id="@+id/statusBall2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:contentDescription="@string/status_ball1"
+                        android:src="@drawable/red_ball"/>
+            </LinearLayout>
+
+            <!-- Novo Menu de Ícones -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                <ImageView
+                        android:id="@+id/menuIcon2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/modulo"
+                        android:contentDescription="@string/perfil"
+                        android:layout_margin="10dp"
+                        app:tint="@color/orange_color"
+                        tools:ignore="ImageContrastCheck"/>
+
+                <ImageView
+                        android:id="@+id/menuIcon3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/campain"
+                        android:contentDescription="@string/campanha"
+                        app:tint="@color/orange_color"
+                        android:layout_margin="10dp"
+                        tools:ignore="ImageContrastCheck"/>
+            </LinearLayout>
+
+            <!-- Ícone do utilizador logado -->
+            <ImageView
+                    android:id="@+id/userIcon1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_user_logged_in"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription"/>
+
+            <!-- Mensagem indicando que o utilizador está logado -->
+            <TextView
+                    android:id="@+id/loggedInMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/voc_est_logado"
+                    android:textSize="16sp"
+                    android:textColor="#00796b"
+                    style="@style/Text3D"
+                    android:visibility="gone"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.widget.ScrollView>

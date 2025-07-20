@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="#E3F2FD"
+                                                   android:padding="24dp"
+                                                   tools:context=".CaloriasActivity">
+
+    <!-- Título da calculadora -->
+    <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculadora_de_calorias_kcal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="20dp"/>
+
+    <!-- EditText para inserir o número de gramas -->
+    <EditText
+            android:id="@+id/edtGramas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/informe_as_gramas_g"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle"
+            android:layout_marginBottom="12dp"
+            android:minHeight="48dp"
+            tools:ignore="Autofill"/>
+
+    <!-- EditText para inserir as calorias por grama -->
+    <EditText
+            android:id="@+id/edtCaloriasPorGrama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/informe_as_calorias_por_grama_kcal_g"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtGramas"
+            android:layout_marginBottom="20dp"
+            android:minHeight="48dp"
+            tools:ignore="Autofill"/>
+
+    <!-- Botão para calcular as calorias -->
+    <Button
+            android:id="@+id/btnCalcularCalorias"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtCaloriasPorGrama"
+            android:layout_marginBottom="20dp"/>
+
+    <!-- TextView para mostrar o resultado -->
+    <TextView
+            android:id="@+id/txtResultadoCalorias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnCalcularCalorias"
+            android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

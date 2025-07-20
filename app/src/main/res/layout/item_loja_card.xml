@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginBottom="12dp"
+                                   android:elevation="6dp"
+                                   android:backgroundTint="#FFFFFF"
+                                   android:radius="12dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <!-- Ícone do item -->
+        <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_coin"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Ícone do item"/>
+
+        <!-- Detalhes do item -->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/itemTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dica Extra"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121" />
+
+            <TextView
+                    android:id="@+id/itemDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receba uma dica para questões difíceis"
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+            <!-- Status do item -->
+            <TextView
+                    android:id="@+id/itemStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disponível"
+                    android:textSize="14sp"
+                    android:textColor="#FF4081"
+                    android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Botão de compra -->
+        <Button
+                android:id="@+id/buyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 moedas"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF4081"
+                android:textSize="14sp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+    <!-- Adicionando um botão de compartilhamento -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+    android:id="@+id/shareLayout">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganhe mais moedas!"
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:layout_marginEnd="8dp"/>
+
+    <Button
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compartilhar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#388E3C"
+            android:textSize="14sp"/>
+</LinearLayout>
+        </androidx.cardview.widget.CardView>

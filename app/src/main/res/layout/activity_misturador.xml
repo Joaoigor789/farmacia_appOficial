@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@drawable/lab">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- Título com ícone -->
+        <TextView
+                android:id="@+id/textoNomeFormula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Misture para criar"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="start"
+                tools:ignore="HardcodedText"/>
+
+
+        <!-- CardView com ListView -->
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+            <ListView
+                    android:id="@+id/listViewIngredientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:divider="@android:color/darker_gray"
+                    android:dividerHeight="1dp"
+                    android:padding="12dp"
+                    tools:ignore="NestedScrolling"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView com EditText -->
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:padding="16dp">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <!-- EditText Ingrediente 1 -->
+                <EditText
+                        android:id="@+id/editTextIngrediente1"
+                        android:hint="@string/selecionar_ingrediente_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:importantForAutofill="yes"
+                        android:autofillHints="name, email"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        tools:ignore="VisualLintTextFieldSize"/>
+
+                <!-- EditText Ingrediente 2 -->
+                <EditText
+                        android:id="@+id/editTextIngrediente2"
+                        android:hint="@string/selecionar_ingrediente_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:importantForAutofill="yes"
+                        android:autofillHints="name, email"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        tools:ignore="VisualLintTextFieldSize"/>
+
+                <!-- EditText Ingrediente 3 -->
+                <EditText
+                        android:id="@+id/editTextIngrediente3"
+                        android:hint="@string/selecionar_ingrediente_3_opcional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:importantForAutofill="yes"
+                        android:autofillHints="name, email"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        tools:ignore="VisualLintTextFieldSize"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botão Misturar -->
+        <Button
+                android:id="@+id/botaoMisturar"
+                android:text="@string/misturar_formula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#263238"
+                android:layout_marginBottom="20dp"/>
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:indeterminate="true"
+                android:layout_centerInParent="true"/>
+
+        <!-- Resultado -->
+        <TextView
+                android:id="@+id/textoResultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resultado_aqui"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

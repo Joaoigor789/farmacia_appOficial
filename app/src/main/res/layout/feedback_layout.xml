@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:background="@drawable/bg_gradient">
+
+    <!-- Nome do usuário -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/digite_seu_nome"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+    <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seu nome"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="8dp"
+            android:minHeight="48dp"
+            tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize"/>
+
+    <!-- Mensagem de feedback -->
+    <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensagem do usuário"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            tools:ignore="HardcodedText"/>
+
+    <!-- Avaliação com RatingBar -->
+    <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="0"
+            android:layout_marginTop="8dp"/>
+
+    <!-- Botão de envio -->
+    <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar_feedback"
+            android:layout_marginTop="12dp"
+            tools:ignore="VisualLintButtonSize"/>
+
+</LinearLayout>

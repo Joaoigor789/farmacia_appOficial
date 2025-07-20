@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollViewPoliticas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:background="#FAFAFA">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tituloPoliticas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pol_ticas_p_blicas"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:gravity="center"
+                android:paddingBottom="12dp" />
+
+        <TextView
+                android:id="@+id/introducaoPoliticas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pol_ticas_p_blicas_s_o_a_es_e_programas_desenvolvidos_pelo_estado_com_o_objetivo_de_atender_s_necessidades_da_popula_o_elas_envolvem_planejamento_implementa_o_e_avalia_o_de_iniciativas_em_reas_como_sa_de_educa_o_seguran_a_e_meio_ambiente"
+                android:textSize="16sp"
+                android:textColor="#424242"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="12dp"
+                tools:ignore="VisualLintLongText"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/t_picos_de_estudo"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1E88E5"
+                android:paddingTop="8dp" />
+
+        <TextView
+                android:id="@+id/topicosPoliticas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ciclo_das_pol_ticas_p_blicas_n_atores_e_institui_es_n_tipos_de_pol_ticas_redistributivas_regulat_rias_distributivas_n_avalia_o_e_impacto_n_pol_ticas_sociais_no_brasil"
+                android:textSize="16sp"
+                android:textColor="#616161"
+                android:paddingBottom="16dp"
+                android:lineSpacingExtra="4dp" />
+
+        <Button
+                android:id="@+id/btnIniciarEstudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/iniciar_estudo12"
+                android:backgroundTint="#388E3C"
+                android:textColor="#000000"
+                tools:ignore="VisualLintButtonSize"/>
+
+    </LinearLayout>
+</ScrollView>

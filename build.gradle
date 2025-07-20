@@ -1,0 +1,17 @@
+buildscript {
+    ext {
+        kotlin_version = '2.1.20'
+    }
+    repositories {
+        google()  // Repositório Google
+        jcenter()  // JCenter (ainda pode ser necessário, mas está sendo descontinuado)
+        mavenCentral()  // Repositório Maven Central
+        maven { url 'https://jitpack.io' }  // Repositório JitPack
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.8.0-alpha05'  // Versão do Gradle Plugin
+        classpath 'com.google.gms:google-services:4.3.15'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // Plugin do Google Services
+    }
+
+}

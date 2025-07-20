@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/background_medieval">
+
+    <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acerte_o_medicamento"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            tools:ignore="TextContrastCheck"/>
+
+    <TextView
+            android:id="@+id/questionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pergunta_aqui"
+            style="@style/Text3D"
+            android:textSize="18sp"
+            android:textColor="#26C6DA"
+            android:gravity="center"
+            android:paddingBottom="20dp"/>
+
+    <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tempo_10s"
+            android:textSize="16sp"
+            android:textColor="#FFB74D"
+            android:gravity="center"
+            android:paddingBottom="10dp"/>
+
+    <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pontua_o_0"
+            android:textSize="16sp"
+            android:textColor="#FFF3E0"
+            android:gravity="center"
+            android:paddingBottom="20dp"/>
+
+    <Button
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao11"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="#1A237E"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    <Button
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao21"
+            android:background="@android:color/holo_green_light"
+            android:textColor="#0D47A1"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    <Button
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao31"
+            android:background="@android:color/holo_red_light"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:padding="10dp"/>
+
+</LinearLayout>

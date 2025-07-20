@@ -1,0 +1,624 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/embed_background">
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin_standard">
+
+    <!-- Livro 1 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livro 1 - Quimica Ambiental (226mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 2 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livro 2 - Quimica II (3.5mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 3 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Livro 3 - Quimica quantitativa(47MB)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 4 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 4 - Quimica analitica(8.90mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 5 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 5 - quimica nivel 6(1mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 6 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 6 Fisio-Quimica Vol (55mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 7 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 7 - quimica Medicinal 1(58mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 8 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 8 - quimica Medicinal 2(31mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 9 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 9 - Fisio-Quimica vol 1(2mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 10 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 10 - Quimica Enem 2017(2mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 11 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 11 - Quimica Ambiental Vol2(3.8mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 12 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 12 - Quimica Organica VOL1 (24mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 13 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 13 - Quimica Fisioquimica VOL3(328mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 14 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 14 - Quimica Fisioquimica VOL4 (114mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+
+    <!-- Livro 15 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 15 - Quimica dos Alimentos (6mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+    <!-- Livro 16 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+        <Button
+                android:id="@+id/btnDownload16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livro 16 - Quimica Analitica (153mb)"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="#2196F3"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:background="@drawable/btn_3d"
+                android:elevation="6dp"
+                android:maxWidth="260dp"
+                android:gravity="center"
+                android:singleLine="false" />
+
+        <ImageView
+                android:id="@+id/favoriteStar16"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/marcar_como_favorito"
+                android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+
+
+
+    <!-- Texto de status centralizado -->
+    <TextView
+            android:id="@+id/favoriteStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#D32F2F"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>

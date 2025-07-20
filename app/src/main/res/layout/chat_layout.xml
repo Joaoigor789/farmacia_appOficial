@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="12dp"
+              android:background="@drawable/bg_gradient"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <ScrollView
+                android:id="@+id/scrollViewMessages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:overScrollMode="always"
+                android:contentDescription="@string/kkkk">
+
+            <LinearLayout
+                    android:id="@+id/messageContainer"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"/>
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="6dp"
+            android:background="@drawable/bg_input_container"
+            android:elevation="4dp">
+
+        <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edittext_rounded"
+                android:padding="12dp"
+                android:textColor="#212121"
+                android:hint="Digite sua mensagem"
+                android:textColorHint="#AAAAAA"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:scrollbars="vertical"
+                android:overScrollMode="ifContentScrolls" />
+
+        <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/send"
+                android:text=""
+                android:drawablePadding="0dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Enviar" />
+
+    </LinearLayout>
+
+</LinearLayout>

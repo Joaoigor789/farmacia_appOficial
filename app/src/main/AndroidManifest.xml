@@ -1,0 +1,140 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissões -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" tools:ignore="ScopedStorage"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <!-- Recursos do dispositivo -->
+    <uses-feature android:name="android.hardware.fingerprint" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="true" />
+    <uses-feature android:name="android.hardware.speech_recognition" android:required="true"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+
+    <application
+            android:name="com.example.farmacia_app.MyApplication"
+            android:allowBackup="true"
+            android:fullBackupContent="@xml/backup_rules"
+            tools:targetApi="31"
+            android:dataExtractionRules="@xml/data_extraction_rules"
+            android:label="@string/app_name"
+            android:icon="@drawable/icones"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.Farmacia_app">
+
+        <!-- Tela principal -->
+        <activity android:name="com.example.farmacia_app.Biometric"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- FileProvider -->
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="${applicationId}.provider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Outras atividades -->
+        <activity android:name="com.example.farmacia_app.MainActivity" android:exported="true"/>
+        <activity android:name="com.example.farmacia_app.LoginActivity" android:label="@string/login" android:exported="true"/>
+        <activity android:name="com.example.farmacia_app.MedicamentosManager"/>
+        <activity android:name="com.example.farmacia_app.FAQMaster"/>
+        <activity android:name="com.example.farmacia_app.AuthActivity"/>
+        <activity android:name="com.example.farmacia_app.ForumActivity"/>
+        <activity android:name="com.example.farmacia_app.TokenDataActivity"/>
+        <activity android:name="com.example.farmacia_app.ContatoDesenvolvedorActivity"/>
+        <activity android:name="com.example.farmacia_app.BromatologiaActivity"/>
+        <activity android:name="com.example.farmacia_app.VigilanciaTelaActivity"/>
+        <activity android:name="com.example.farmacia_app.FeedbackActivity"/>
+        <activity android:name="com.example.farmacia_app.ChatbotActivity"/>
+        <activity android:name="com.example.farmacia_app.BaseActivity"/>
+        <activity android:name="com.example.farmacia_app.desativados.CameraActivity"/>
+        <activity android:name="com.example.farmacia_app.PolicyActivity"/>
+        <activity android:name="com.example.farmacia_app.SecondActivity"/>
+        <activity android:name="com.example.farmacia_app.MenuActivity"/>
+        <activity android:name="com.example.farmacia_app.AtualidadesActivity"/>
+        <activity android:name="com.example.farmacia_app.EstudoActivity"/>
+        <activity android:name="com.example.farmacia_app.ChangelogManagerActivity"/>
+        <activity android:name="com.example.farmacia_app.QuizActivity"/>
+        <activity android:name="com.example.farmacia_app.ChatbotFarmacia"/>
+        <activity android:name="com.example.farmacia_app.CaloriasActivity"/>
+        <activity android:name="com.example.farmacia_app.CalculadoraSoro"/>
+        <activity android:name="com.example.farmacia_app.SettingsActivity"/>
+        <activity android:name="com.example.farmacia_app.NotasActivity"/>
+        <activity android:name="com.example.farmacia_app.CookieConsentActivity"/>
+        <activity android:name="com.example.farmacia_app.BromatoQuizActivity"/>
+        <activity android:name="com.example.farmacia_app.LojaActivity"/>
+        <activity android:name="com.example.farmacia_app.VideoEstudoActivity"/>
+        <activity android:name="com.example.farmacia_app.EditarPerfilActivity"/>
+        <activity android:name="com.example.farmacia_app.PerfilActivity"/>
+        <activity android:name="com.example.farmacia_app.CalendarActivity"/>
+        <activity android:name="com.example.farmacia_app.WordBacActivity"/>
+        <activity android:name="com.example.farmacia_app.BromatoQuizActivityLipideos"/>
+        <activity android:name="com.example.farmacia_app.VisionOCRActivity"/>
+        <activity android:name="com.example.farmacia_app.jogos.MisturadorActivity"/>
+        <activity android:name="com.example.farmacia_app.QuimicaAmbientalActivity" />
+        <activity android:name="com.example.farmacia_app.DownloadPdfActivity" />
+        <activity android:name="com.example.farmacia_app.VoiceBroadcasterActivity" />
+        <activity android:name="com.example.farmacia_app.MenuRedeActivity" />
+        <activity android:name="com.example.farmacia_app.ChatActivity"/>
+
+
+
+
+
+
+        <!-- Firebase -->
+        <meta-data
+                android:name="com.google.firebase.analytics.APP_MEASUREMENT_ENABLED"
+                android:value="true" />
+
+        <service
+                android:name="com.example.farmacia_app.MyFirebaseMessagingService"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+
+
+        <!-- Reconhecimento de voz -->
+        <service
+                android:name="android.speech.RecognitionService"
+                android:permission="android.permission.BIND_VOICE_INTERACTION"/>
+
+        <!-- Serviços personalizados -->
+        <service android:name="com.example.farmacia_app.LagTred" />
+        <service android:name="com.example.farmacia_app.AppMonitorService" android:exported="false"/>
+
+    </application>
+</manifest>

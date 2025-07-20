@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/rootLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/medieval_texture"
+              android:padding="16dp">
+
+    <!-- Seção de Texto -->
+    <LinearLayout
+            android:id="@+id/textSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/estudosTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:padding="8dp" />
+
+        <!-- SearchView adicionado -->
+        <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:queryHint="@string/search_hint"/>
+
+        <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pr_ximo_estudo" />
+    </LinearLayout>
+
+    <!-- Seção de WebView -->
+    <LinearLayout
+            android:id="@+id/webSection"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <WebView
+                android:id="@+id/webViewEstudo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- Botão para alternar -->
+    <Button
+            android:id="@+id/toggleViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alternar_para_fotos_v_deos"
+            tools:ignore="VisualLintButtonSize"/>
+</LinearLayout>

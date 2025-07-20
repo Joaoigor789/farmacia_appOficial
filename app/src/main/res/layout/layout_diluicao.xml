@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layoutDiluicao"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#D1C4E9"
+              android:padding="16dp"
+              android:visibility="gone">
+
+    <EditText
+            android:id="@+id/edtConcentracaoInicial"
+            android:hint="Concentração inicial (mg/L)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <EditText
+            android:id="@+id/edtConcentracaoFinal"
+            android:hint="Concentração final desejada (mg/L)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <EditText
+            android:id="@+id/edtVolumeInicial"
+            android:hint="Volume inicial (L)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <Button
+            android:id="@+id/btnCalcularDiluicao"
+            android:text="Calcular Diluição"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <TextView
+            android:id="@+id/txtResultadoDiluicao"
+            android:text="Volume para diluir: "
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

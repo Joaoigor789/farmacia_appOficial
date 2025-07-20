@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:padding="16dp">
+
+    <!-- Texto de instrução -->
+    <TextView
+            android:id="@+id/text_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coloque_seu_dedo_no_sensor"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
+
+    <!-- Ícone de biometria -->
+    <ImageView
+            android:id="@+id/biometric_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_instruction"
+            android:src="@drawable/biometricc"
+            android:contentDescription="@string/cone_de_autentica_obiom_trica"
+            android:layout_marginTop="30dp"/>
+
+
+
+    <!-- Texto para erro de autenticação -->
+    <TextView
+            android:id="@+id/text_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/falha_na_autentica_o"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/biometric_icon"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"/>
+</RelativeLayout>

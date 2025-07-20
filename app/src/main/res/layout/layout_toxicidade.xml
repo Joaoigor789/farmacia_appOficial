@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layoutToxicidade"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFCDD2"
+              android:padding="16dp"
+              android:visibility="gone">
+
+    <EditText
+            android:id="@+id/edtNomeSubstancia"
+            android:hint="Nome da substância"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <Button
+            android:id="@+id/btnConsultarToxicidade"
+            android:text="Consultar Toxicidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <TextView
+            android:id="@+id/txtInfoToxicidade"
+            android:text=""
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="48dp"
+        android:height="48dp"
+        android:viewportWidth="48"
+        android:viewportHeight="48">
+    <!-- Envelope -->
+    <path
+            android:fillColor="#4CAF50"
+            android:pathData="M4,6C4,4.9 4.9,4 6,4H42C43.1,4 44,4.9 44,6V42C44,43.1 43.1,44 42,44H6C4.9,44 4,43.1 4,42V6Z" />
+    <!-- Fecho do envelope -->
+    <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M4,6L24,22L44,6" />
+</vector>

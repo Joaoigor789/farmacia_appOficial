@@ -1,0 +1,108 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:title="@string/todo1"
+      android:padding="@dimen/margin_standard">
+
+    <item
+            android:id="@+id/menu_inicio"
+            android:title="@string/inicio"
+            android:icon="@drawable/casa"
+            android:tint="@color/black"
+
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/menu_baixar_app"
+            android:title="Baixar App"
+            android:icon="@drawable/musica"
+    app:showAsAction="always" />
+
+
+    <item
+            android:id="@+id/menu_sobre"
+            android:title="@string/sobre"
+            android:icon="@drawable/acess"
+            android:tint="@color/black"
+
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/menu_autor"
+            android:title="@string/autor"
+            android:icon="@drawable/acs"
+            android:tint="@color/black"
+
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/menu_atualizacao"
+            android:title="@string/ultima_atualizacao"
+            android:icon="@drawable/log"
+            android:background="@drawable/embed_background"
+            android:tint="@color/black"
+            app:showAsAction="always"/>
+
+
+
+    <!-- Adicionando o item de Perfil -->
+    <item
+            android:id="@+id/menu_perfil"
+            android:title="@string/perfil"
+            android:icon="@drawable/id"
+            android:tint="@color/black"
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/menu_calendario"
+            android:title="@string/calend_rio"
+            app:showAsAction="always"
+            android:icon="@drawable/calendar" />
+
+    <item
+            android:id="@+id/menu_licenca"
+            android:title="@string/licenca_creative_commons"
+            app:showAsAction="always"
+            android:icon="@drawable/lice" />
+
+
+    <!-- Espaçador visual -->
+    <item
+            android:id="@+id/menu_spacer"
+            android:icon="@drawable/ic_spacer"
+            android:enabled="false"
+            android:title="@string/todo2"
+            android:visible="true"
+            app:showAsAction="always"/>
+
+
+    <!-- Espaçador visual -->
+    <item
+            android:id="@+id/menu_spacer4"
+            android:icon="@drawable/ic_spacer"
+            android:enabled="false"
+            android:visible="true"
+            android:title="@string/todo3"
+            app:showAsAction="always"/>
+
+
+    <!-- Espaçador visual -->
+    <item
+            android:id="@+id/menu_spacer1"
+            android:icon="@drawable/ic_spacer"
+            android:enabled="false"
+            android:title="@string/todo4"
+            android:visible="true"
+            app:showAsAction="always"/>
+
+
+    <!-- Espaçador visual -->
+    <item
+            android:id="@+id/menu_spacer2"
+            android:icon="@drawable/ic_spacer"
+            android:enabled="false"
+            android:visible="true"
+            android:title="@string/todo5"
+            app:showAsAction="always"/>
+
+
+</menu>

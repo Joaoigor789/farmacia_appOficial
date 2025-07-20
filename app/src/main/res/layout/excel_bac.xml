@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:background="#F2F2F7">
+
+    <!-- Botão com efeito 3D e cor azul -->
+    <Button
+            android:id="@+id/btnAbrirExcel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abrir_excel"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_3d_blue"
+            android:focusable="true"
+            android:contentDescription="@string/botao_abrir_excel"
+            android:elevation="8dp" />
+
+    <!-- ScrollView para permitir rolagem do conteúdo da imagem -->
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:contentDescription="@string/exibir_pdf_scroll">
+
+        <!-- ImageView onde o conteúdo do PDF será exibido -->
+        <ImageView
+                android:id="@+id/pdfImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/exibir_pdf"
+                android:scaleType="fitCenter"
+                android:elevation="4dp" />
+    </ScrollView>
+
+</LinearLayout>

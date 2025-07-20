@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4F6F9"
+            android:padding="16dp">
+
+    <LinearLayout
+            android:id="@+id/container_loja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- Header de moedas -->
+        <TextView
+                android:id="@+id/moedasTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Moedas: 100"
+                android:textColor="#333"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/bg_moedas"
+                android:textStyle="bold" />
+
+        <!-- Texto explicativo sobre doação com design 3D -->
+        <TextView
+                android:id="@+id/textoDoacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quer doar via PIX para ajudar o aplicativo a se desenvolver? Clique no botão abaixo:"
+                android:textColor="#004D40"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/bg_texto_doacao"
+                android:shadowColor="#99000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+        <!-- Botão para Doação via PIX -->
+        <Button
+                android:id="@+id/botaoDoarPix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doar via PIX"
+                android:textColor="#263238"
+                android:background="#4CAF50"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:textAllCaps="false"/>
+
+        <!-- Card para cada item -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+            <!-- Exemplo: Dica Extra -->
+            <include layout="@layout/item_loja" />
+            <include layout="@layout/item_loja" />
+            <include layout="@layout/item_loja" />
+            <!-- Adicione mais includes ou diretamente os cards abaixo -->
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <TextView
+            android:id="@+id/textViewToken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Token"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/textViewDeviceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device ID"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/textViewTipoDispositivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Dispositivo"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/textViewVersaoAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Versão do Android"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/textViewNomeDispositivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Dispositivo"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/textViewLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/textViewLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/textViewDataHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data e Hora"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/textViewTipoConexao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Conexão"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/textViewVersaoApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Versão do App"
+            android:textSize="18sp" />
+
+    <TextView
+    android:id="@+id/device_info_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Informações do Dispositivo"
+    android:textSize="18sp" />
+</LinearLayout>

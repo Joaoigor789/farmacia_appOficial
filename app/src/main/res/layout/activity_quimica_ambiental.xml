@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@drawable/embed_background">
+
+    <LinearLayout
+            android:id="@+id/mainLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <!-- Botões empilhados verticalmente -->
+        <LinearLayout
+                android:id="@+id/layoutBotoes"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+            <Button
+                    android:id="@+id/btnConcentracao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Concentração"
+                    android:background="@drawable/custom_button"
+                    android:layout_marginBottom="8dp" />
+
+            <Button
+                    android:id="@+id/btnPH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="pH"
+                    android:background="@drawable/custom_button"
+                    android:layout_marginBottom="8dp" />
+
+
+            <Button
+                    android:id="@+id/btnIQA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IQA"
+                    android:background="@drawable/custom_button"
+                    android:layout_marginBottom="8dp" />
+
+
+
+            <Button
+                    android:id="@+id/btnToxicidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Toxicidade"
+                    android:background="@drawable/custom_button"
+                    android:layout_marginBottom="8dp" />
+
+            <Button
+                    android:id="@+id/btnDiluicao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diluição"
+                    android:background="@drawable/custom_button" />
+
+        </LinearLayout>
+
+        <!-- Container para as seções -->
+        <FrameLayout
+                android:id="@+id/containerSecoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background">
+
+            <include
+                    android:id="@+id/layout_concentracao"
+                    layout="@layout/layout_concentracao"
+                    android:visibility="visible" />
+
+            <include
+                    android:id="@+id/layout_iqa"
+                    layout="@layout/layout_iqa"
+                    android:visibility="gone" />
+
+            <include
+                    android:id="@+id/layout_ph"
+                    layout="@layout/layout_ph"
+                    android:visibility="gone" />
+
+            <include
+                    android:id="@+id/layout_toxicidade"
+                    layout="@layout/layout_toxicidade"
+                    android:visibility="gone" />
+
+            <include
+                    android:id="@+id/layout_diluicao"
+                    layout="@layout/layout_diluicao"
+                    android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

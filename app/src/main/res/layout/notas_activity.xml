@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp"
+
+              android:background="@color/teal_700"
+              android:gravity="top">
+
+    <!-- Campo de texto para inserir a anotação -->
+
+    <!-- Botão para salvar a anotação -->
+
+    <EditText
+            android:id="@+id/etNota"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="@string/digite_sua_anota_o_aqui"
+            style="@style/Text3D"
+            android:gravity="top"
+            android:background="@drawable/bg_gradient"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:inputType="textMultiLine"
+            tools:ignore="Autofill"/>
+
+    <Button
+            android:id="@+id/btnSalvarNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/salvar_anota_o" />
+
+    <!-- Botão para apagar a anotação -->
+    <Button
+            android:id="@+id/btnApagarNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apagar_anota_o"
+            android:layout_marginTop="16dp"/> <!-- Margem superior para espaçamento -->
+
+    <!-- Exibição da nota salva -->
+    <TextView
+            android:id="@+id/tvNotasSalvas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/suas_anota_es_aparecer_o_aqui"
+            android:textSize="16sp"
+            style="@style/Text3D"
+            android:textColor="@color/black"
+            android:paddingTop="16dp"
+            android:textStyle="bold"
+            android:gravity="center" /> <!-- Alinhamento centralizado para o texto -->
+
+</LinearLayout>

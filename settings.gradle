@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)  // Garante que repositórios sejam gerenciados centralmente
+    repositories {
+        google()  // Repositório Google
+        mavenCentral()  // Repositório Maven Central
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+rootProject.name = "farmacia_app"
+include ':app'  // Inclui o módulo 'app' no projeto
