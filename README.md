@@ -9,7 +9,6 @@
 
 ![Android](https://img.shields.io/badge/Platform-Android-green?logo=android)
 ![Kotlin](https://img.shields.io/badge/Language-Kotlin-7F52FF?logo=kotlin&style=flat-square)
-
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 ![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey)
 
