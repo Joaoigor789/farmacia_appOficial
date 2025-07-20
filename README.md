@@ -164,10 +164,10 @@ farmacia_app/
 
 ## 📥 Download do APK
 
-Quer testar o app agora? Baixe a versão atualizada do APK:
-[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?logo=android&style=flat-square)]👉(https://github.com/Joaoigor789/farmacia_appOficial/releases/tag/v.1.3.7)
+Quer testar o app agora? Baixe a versão atualizada do APK:👉
+[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?logo=android&style=flat-square)](https://github.com/Joaoigor789/farmacia_appOficial/releases/tag/v.1.3.7)
 
-👉 
+
 
 ---
 
